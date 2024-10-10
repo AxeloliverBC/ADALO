@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="book">
         <div class="page-container">
@@ -21,8 +23,10 @@
                     <div class="team-section">
                         <h3>Integrantes del Proyecto</h3>
                         <div class="team-members">
-                            <p class="team-member">Balboa Cusi Axel Oliver</p>
-                            <p class="team-member">Huaman Boza Jesus Pedro</p>
+                            <p class="team-member">Balboa Cusi, Axel Oliver</p>
+                            <p class="team-member">Huaman Boza, Jesus Pedro</p>
+                            <p class="team-member">Palacios Riera, Hugo David</p>
+                            <p class="team-member">Huaytalla Aldana, Franklin Dino</p>
                         </div>
                     </div>
                 </div>
@@ -33,9 +37,12 @@
                 <div class="content-wrapper">
                     <h2>1. Introducción a ADALO</h2>
                     <div class="content-section">
-                        <p>ADALO es una plataforma revolucionaria en el mundo del desarrollo no-code que está transformando
-                            la manera en que creamos aplicaciones móviles y web. Esta plataforma permite a emprendedores, 
-                            diseñadores y profesionales crear aplicaciones funcionales sin necesidad de conocimientos de programación.</p>
+                        <p>ADALO es una plataforma revolucionaria en el mundo del desarrollo no-code que está
+                            transformando
+                            la manera en que creamos aplicaciones móviles y web. Esta plataforma permite a
+                            emprendedores,
+                            diseñadores y profesionales crear aplicaciones funcionales sin necesidad de conocimientos de
+                            programación.</p>
                         <div class="image-container">
                             <img src="interfaz.png" alt="Interfaz de ADALO" class="content-image">
                             <p class="image-caption">Interfaz principal de ADALO</p>
@@ -264,14 +271,33 @@
                 </div>
             </div>
 
-            <!-- Página 10: Conclusión -->
-            <div class="page content-page thanks-page" data-color="final">
+
+            <!-- Nueva página para el video -->
+            <div class="page content-page" data-color="10">
+                <div class="content-wrapper">
+                    <h2>11. Video Tutorial de ADALO</h2>
+                    <div class="content-section">
+                        <h3>Introducción a ADALO en Video</h3>
+                        <p>Estos videos proporcionan una mejor visión general de cómo utilizar ADALO para crear aplicaciones sin
+                            código.</p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://es.adalo.com/videos"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <button class="nav-button" id="case-study">Ver Caso Práctico</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page content-page" data-color="final">
                 <div class="content-wrapper">
                     <h2>10. Conclusión y Próximos Pasos</h2>
                     <div class="content-section">
                         <h3>Conclusiones</h3>
-                        <p>ADALO representa una solución poderosa para el desarrollo no-code, permitiendo a usuarios de todos los niveles crear aplicaciones profesionales. Sus capacidades, aunque con algunas limitaciones, ofrecen un equilibrio entre facilidad de uso y funcionalidad.</p>
-                        
+                        <p>ADALO representa una solución poderosa para el desarrollo no-code, permitiendo a usuarios de
+                            todos los niveles crear aplicaciones profesionales. Sus capacidades, aunque con algunas
+                            limitaciones, ofrecen un equilibrio entre facilidad de uso y funcionalidad.</p>
+
                         <h3>Próximos Pasos</h3>
                         <ul>
                             <li>Explorar la plataforma con un proyecto pequeño</li>
@@ -279,12 +305,13 @@
                             <li>Revisar los recursos de aprendizaje</li>
                             <li>Comenzar con una aplicación de prueba</li>
                         </ul>
-                        
+
                         <div class="image-container">
                             <img src="grax.gif" alt="Conclusión" class="content-image">
                         </div>
-                        
-                        <p class="final-note">Gracias por explorar nuestro manual de ADALO. Esperamos que esta guía te ayude en tu viaje de desarrollo no-code.</p>
+
+                        <p class="final-note">Gracias por explorar nuestro manual de ADALO. Esperamos que esta guía te
+                            ayude en tu viaje de desarrollo no-code.</p>
                     </div>
                 </div>
             </div>
@@ -295,12 +322,13 @@
         <button class="nav-button" id="prev">Anterior</button>
         <button class="nav-button" id="next">Siguiente</button>
         <button class="nav-button" id="home">Inicio</button>
+        <a href="practico.html" type="button" class="nav-button">Caso Practico</a>
     </div>
 
     <audio id="page-flip-sound" preload="auto">
         <source src="https://cdnjs.cloudflare.com/ajax/libs/flip-book-sound/1.0.0/flip.mp3" type="audio/mpeg">
     </audio>
-
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
+
 </html>

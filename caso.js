@@ -3,7 +3,7 @@ const pages = document.querySelectorAll('.page');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const homeBtn = document.getElementById('home');
-const caseStudyBtn = document.getElementById('case-study');
+const backToManualBtn = document.getElementById('back-to-manual');
 const pageFlipSound = document.getElementById('page-flip-sound');
 
 const pageColors = [
@@ -37,11 +37,6 @@ function updatePages() {
     prevBtn.style.display = currentPage === 0 ? 'none' : 'inline-block';
     nextBtn.style.display = currentPage === pages.length - 1 ? 'none' : 'inline-block';
     homeBtn.style.display = currentPage === 0 ? 'none' : 'inline-block';
-    
-    // Show case study button on the last page
-    if (caseStudyBtn) {
-        caseStudyBtn.style.display = currentPage === pages.length - 1 ? 'inline-block' : 'none';
-    }
 }
 
 function playPageFlipSound() {
@@ -80,9 +75,9 @@ homeBtn.addEventListener('click', () => {
     goToPage(0);
 });
 
-if (caseStudyBtn) {
-    caseStudyBtn.addEventListener('click', () => {
-        window.location.href = 'practico.html';
+if (backToManualBtn) {
+    backToManualBtn.addEventListener('click', () => {
+        window.location.href = 'index.html';
     });
 }
 
